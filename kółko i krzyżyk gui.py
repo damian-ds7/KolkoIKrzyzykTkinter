@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 
+#utworzenie okna, tytuł i zablokowanie zmiany rozmiaru
 okno = Tk()
 okno.title('Kółko i Krzyżyk')
 okno.resizable(False, False)
