@@ -14,17 +14,20 @@ czy_koniec = False
 
 def gra():
     ### global znaczy że te zmienne będą dostępne dla całego programu
-    global p1, p2, p3, p4, p5, p6, p7, p8, p9 # zmienne przycisków
+    global p1, p2, p3, p4, p5, p6, p7, p8, p9 ### zmienne przycisków
     global czy_x, licznik, czy_koniec
-    czy_x = True # zmienia jaki znak będzie wyświetlany po naciśnięciu
-    czy_koniec = False # sprawdza czy już koniec gry
-    licznik = 0 # liczy kliknięcia
+    czy_x = True ### zmienia jaki znak będzie wyświetlany po naciśnięciu
+    czy_koniec = False ### sprawdza czy już koniec gry
+    licznik = 0 ### liczy kliknięcia
     
     ### Utworzenie 9 przycisków na grę
     p1 = Button(okno, text = ' ', font = ('Calibri', 21), height = 3, width = 8, bg = 'SystemButtonFace',
                 command = lambda: nacisniete(p1))
+    ### parametry każego przycisku(okno w którym ma się znajdować, jaki tekst na nim będzie (pusty, X, O), czcionka (typ i rozmiar), wysokość, szerokość, kolor tła)
     p1.grid(row = 0, column = 0)
-
+    ### położenie każdego przycisku tutaj rząd 0, kolumna 0
+    ### i to samo dla każego przycisku tylko zmienione położenie
+    
     p2 = Button(okno, text = ' ', font = ('Calibri', 21), height = 3, width = 8, bg = 'SystemButtonFace',
                 command = lambda: nacisniete(p2))
     p2.grid(row = 0, column = 1)
